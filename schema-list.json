@@ -1,0 +1,22 @@
+[
+  {
+    "namespace": "bimiList",
+    "functions": [
+      {
+        "name": "setThreadPaneBimiLogo",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "fromAddress",
+            "type": "string"
+          },
+          {
+            "name": "base64Logo",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

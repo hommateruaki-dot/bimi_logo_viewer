@@ -1,0 +1,22 @@
+[
+  {
+    "namespace": "bimiHeader",
+    "functions": [
+      {
+        "name": "setBimiLogo",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "base64Logo",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

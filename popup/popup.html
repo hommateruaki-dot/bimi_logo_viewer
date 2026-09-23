@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BIMI Info</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-wrap">
+      <img id="logo" alt="BIMI Logo">
+    </div>
+    <div class="brand">
+      <div class="brand-name">BIMI Info</div>
+      <div class="brand-sub">Message authentication status</div>
+    </div>
+  </header>
+
+  <main>
+    <div id="loading">Analysing message...</div>
+
+    <div id="content" hidden>
+
+
+      <section class="card">
+        <h2>Status</h2>
+
+        <div class="kv">
+
+          <div class="k">BIMI Indicator</div>
+          <div id="status" class="v">-</div>
+
+          <div class="k">Logo</div>
+          <div id="logo-status" class="v">-</div>
+
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Message</h2>
+        <div class="kv">
+          <div class="k">Subject</div>
+          <div id="subject" class="v">-</div>
+
+          <div class="k">From</div>
+          <div id="from" class="v mono">-</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Authentication</h2>
+
+        <div class="kv">
+
+          <div class="k">Header From domain</div>
+          <div id="from-domain" class="v mono">-</div>
+
+          <div class="k">BIMI</div>
+          <div id="bimi" class="v">-</div>
+
+          <div class="k">authority</div>
+          <div id="authority" class="v">-</div>
+
+          <div class="k">BIMI header.d</div>
+          <div id="bimi-headerd" class="v mono">-</div>
+
+          <div class="k">DMARC</div>
+          <div id="dmarc" class="v">-</div>
+
+          <div class="k">DMARC header.from</div>
+          <div id="headerfrom" class="v mono">-</div>
+
+          <div class="k">DKIM</div>
+          <div id="dkim" class="v">-</div>
+
+          <div class="k">DKIM header.d</div>
+          <div id="dkim-headerd" class="v mono">-</div>
+
+          <div class="k">DKIM header.i</div>
+          <div id="headeri" class="v mono">-</div>
+
+          <div class="k">SPF</div>
+          <div id="spf" class="v">-</div>
+
+          <div class="k">SPF mailfrom</div>
+          <div id="mailfrom" class="v mono">-</div>
+
+          <div class="k">Domain match</div>
+          <div id="domain-match" class="v">-</div>
+
+        </div>
+
+      </section>
+
+
+
+      <section class="card">
+        <h2>BIMI Indicator</h2>
+        <div class="kv">
+          <div class="k">SVG</div>
+          <div id="svg-status" class="v">-</div>
+
+          <div class="k">Size</div>
+          <div id="bimi-size" class="v mono">-</div>
+        </div>
+      </section>
+
+    </div>
+
+    <div id="error" hidden></div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
